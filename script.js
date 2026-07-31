@@ -81,9 +81,9 @@ enterBtn.addEventListener("click", () => {
 
   // Typewriter effect
   const typewriter = document.getElementById('typewriter');
-  const letterText = `My dearest love,
+  const letterText = `Hai sayangku cintaku,
 
-You make every ordinary moment feel tender and beautiful. Your smile has a way of turning even my quietest days into something full of warmth, color, and joy. I love the softness in your heart, the kindness in your soul, and the gentle magic you bring into my life.
+Hai sayang makasih ya udah selalu temenin aku tiap hari, selalu semangatin aku tiap hari makasih ya sayangg, dan dari kamu juga aku bisa ngejauhin diri aku yang dulu jelek banget, aku suka banget dengerin kamu yapping, waktu kita lagi becanda terus kita ketawaa bareng kyak seru banget walaupun kita jauh dengan kita ketawa aku ngerasa kita deket semoga kita bisa ketemu ya sayangku, temenin aku terus yaa sayang aku juga temenin kamu terus dan selalu semangatin kamu, aku akan selalu berusaha untuk menjadi lebih baik sayang, maaffin aku ya yang masih sering bt sama kamu i'm sorry bibeyy, i will try be better every day
 
 I hope this little website reminds you of how deeply you are loved. Not just today, but every day. You are my favorite feeling, my sweetest thought, and my most cherished dream. I will always adore you, cherish you, and choose you again and again.
 
