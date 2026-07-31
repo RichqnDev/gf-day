@@ -1,9 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Loader
-  const loader = document.getElementById('loader');
-  window.setTimeout(() => {
-    loader.classList.add('hidden');
-  }, 2200);
+  // ==========================
+// CINEMATIC INTRO
+// ==========================
+
+const cinematicIntro = document.getElementById("cinematicIntro");
+const enterBtn = document.getElementById("enterBtn");
+const musicPopup = document.getElementById("musicPopup");
+
+
+enterBtn.addEventListener("click", () => {
+
+  cinematicIntro.classList.add("hide");
+
+  setTimeout(() => {
+
+    musicPopup.classList.add("active");
+
+  }, 1000);
+
+});
 
   // Smooth reveal on scroll
   const observer = new IntersectionObserver(
@@ -91,6 +106,70 @@ const musicButton = document.getElementById("musicToggle");
 const bgMusic = document.getElementById("bgMusic");
 
 let isMusicPlaying = false;
+// ==========================
+// MUSIC POPUP BUTTON
+// ==========================
+
+const playMusicBtn = document.getElementById("playMusicBtn");
+const noMusicBtn = document.getElementById("noMusicBtn");
+
+
+function continueWebsite(){
+
+  musicPopup.classList.remove("active");
+
+  loader.classList.remove("hidden");
+
+
+  setTimeout(() => {
+
+    loader.classList.add("hidden");
+
+  },2200);
+
+}
+
+
+
+// YES PLAY MUSIC
+
+playMusicBtn.addEventListener("click", async()=>{
+
+  try{
+
+    await bgMusic.play();
+
+    isMusicPlaying = true;
+
+    musicButton.innerHTML =
+    "<span>⏸</span> Music Off";
+
+
+  }catch(error){
+
+    console.log("Music error:", error);
+
+  }
+
+
+  continueWebsite();
+
+});
+
+
+
+
+// NO MUSIC
+
+noMusicBtn.addEventListener("click",()=>{
+
+
+  bgMusic.pause();
+
+  continueWebsite();
+
+
+});
 
 musicButton.addEventListener("click", async () => {
   try {

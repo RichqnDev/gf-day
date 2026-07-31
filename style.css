@@ -562,3 +562,275 @@ a {
     z-index:2;
 
 }
+/* ==========================
+   CINEMATIC INTRO
+========================== */
+
+.cinematic-intro {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(255,126,168,0.25), transparent 45%),
+    linear-gradient(135deg, #fff0f6, #ffdbe9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  transition:
+    opacity 1s ease,
+    visibility 1s ease;
+}
+
+
+.cinematic-intro.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.intro-content {
+  text-align: center;
+  padding: 2rem;
+  animation: introFade 1.5s ease;
+}
+
+
+.intro-heart {
+  font-size: 4rem;
+  animation: pulse 1.5s infinite;
+  margin-bottom: 1.5rem;
+}
+
+
+.intro-text {
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--pink-dark);
+  margin-bottom: 1.5rem;
+}
+
+
+.intro-message {
+  font-size: 1.2rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+
+.intro-content h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(3rem, 10vw, 5rem);
+  color: var(--pink-dark);
+  margin: 1.5rem 0;
+}
+
+
+/* ==========================
+   MUSIC POPUP
+========================== */
+
+.music-popup {
+
+  position: fixed;
+  inset: 0;
+
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(80,40,70,0.35);
+
+  z-index: 9998;
+
+  padding: 1rem;
+
+}
+
+
+.music-popup.active {
+  display: flex;
+}
+
+
+.music-card {
+
+  width: min(90%,420px);
+
+  padding: 2rem;
+
+  text-align:center;
+
+}
+
+
+.music-card h2 {
+
+  margin-bottom:1.5rem;
+
+}
+
+
+.no-music {
+
+  margin-top:1rem;
+
+  background:
+  linear-gradient(135deg,#ddd,#aaa);
+
+}
+
+
+@keyframes introFade {
+
+  from {
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+
+/* ==========================
+   HERO MOBILE FIX
+========================== */
+
+.hero-card {
+
+  position:relative;
+  overflow:hidden;
+
+}
+
+
+.hero-bg {
+
+  position:absolute;
+  inset:0;
+
+}
+
+
+.hero-bg img {
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  opacity:.28;
+
+  filter:
+  blur(10px)
+  brightness(.65);
+
+  transform:scale(1.15);
+
+  will-change:transform;
+
+}
+
+
+.hero-card > *:not(.hero-bg){
+
+  position:relative;
+  z-index:2;
+
+}
+
+
+@media(max-width:600px){
+
+.hero-card{
+
+ min-height:100svh;
+
+ padding:2rem 1rem;
+
+ display:flex;
+
+ align-items:center;
+
+ justify-content:center;
+
+}
+
+
+.hero-subtitle{
+
+ font-size:.9rem;
+
+}
+
+
+.hero h1{
+
+ margin-top:0;
+
+}
+
+
+}
+/* ==========================
+   MUSIC POPUP
+========================== */
+
+.music-popup {
+
+  position: fixed;
+  inset: 0;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(94,56,84,0.45);
+
+  z-index: 5000;
+
+  padding: 1rem;
+
+}
+
+
+.music-popup.active {
+
+  display: flex;
+
+}
+
+
+.music-card {
+
+  width: min(90%,420px);
+
+  padding: 2rem;
+
+  text-align: center;
+
+}
+
+
+.music-card h2 {
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+.music-card button {
+
+  margin: 0.5rem;
+
+}
