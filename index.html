@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Girlfriend Day</title>
+    <meta
+      name="description"
+      content="A romantic, dreamy tribute made for Girlfriend Day."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="background-hearts" aria-hidden="true">
+      <span>❤</span><span>❦</span><span>♡</span><span>❤</span>
+      <span>❦</span><span>♡</span><span>❤</span><span>❦</span>
+    </div>
+
+    <div id="loader" class="loader">
+      <div class="loader-heart">❤</div>
+      <p>Crafting your love story...</p>
+    </div>
+
+    <button id="musicToggle" class="music-toggle" aria-label="Play background music">
+      <span>♪</span> Music On
+    </button>
+<audio id="bgMusic" preload="auto" loop>
+    <source src="music/Every Summertime.mp3" type="audio/mpeg">
+</audio>
+    <main class="page-content">
+      <section id="welcome" class="hero reveal">
+        <div class="hero-card glass-card">
+          <p class="eyebrow">For my beautiful girl</p>
+          <h1>Happy Girlfriend Day <span>❤️</span></h1>
+          <p class="hero-subtitle">
+            I made something special just for you, with all my heart.
+          </p>
+          <a href="#memory" class="button-primary">Open My Heart</a>
+        </div>
+      </section>
+
+      <section id="memory" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">My Girl is the most beautiful and cutest</p>
+          <h2> Girlfriend so pretty</h2>
+        </div>
+
+        <div class="slider glass-card">
+          <div class="slide active">
+            <img
+              src=images/2slide.jpeg
+              alt="Romantic sunset scene"
+            />
+            <div class="slide-caption">
+              <h3>Sunset walks</h3>
+              <p>Every evening feels softer when I’m with you.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src=images/3slide.jpeg
+              alt="Romantic candlelight dinn"er"
+            />
+            <div class="slide-caption">
+              <h3>Golden evenings</h3>
+              <p>Our favorite stories are written in candlelight.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src=images/4slide.jpeg
+              alt="Soft pastel bouquet"
+            />
+            <div class="slide-caption">
+              <h3>Blooming love</h3>
+              <p>Like flowers in spring, your love keeps growing.</p>
+            </div>
+          </div>
+
+          <button class="slider-btn prev" aria-label="Previous slide">❮</button>
+          <button class="slider-btn next" aria-label="Next slide">❯</button>
+          <div class="slider-dots"></div>
+        </div>
+      </section>
+
+      <section id="letter" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">A love letter</p>
+          <h2>From my heart to yours</h2>
+        </div>
+        <div class="glass-card letter-card">
+          <p id="typewriter" class="letter-text"></p>
+        </div>
+      </section>
+
+      <section id="reasons" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Why I adore you</p>
+          <h2>Reasons I love you</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="glass-card reason-card">
+            <div class="icon">✨</div>
+            <h3>Your smile</h3>
+            <p>It lights up every ordinary day and turns it into magic.</p>
+          </article>
+          <article class="glass-card reason-card">
+            <div class="icon">🌷</div>
+            <h3>Your kindness</h3>
+            <p>Your warmth makes the world feel softer and gentler.</p>
+          </article>
+          <article class="glass-card reason-card">
+            <div class="icon">💖</div>
+            <h3>Your love</h3>
+            <p>Everything beautiful in my life feels brighter because of you.</p>
+          </article>
+          <article class="glass-card reason-card">
+            <div class="icon">🌙</div>
+            <h3>Your presence</h3>
+            <p>Even silence with you feels like a dream I never want to wake from.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="timeline" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Our story</p>
+          <h2>Timeline of beautiful moments</h2>
+        </div>
+        <div class="timeline glass-card">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>First hello</h3>
+              <p>The day our worlds felt instantly softer and more alive.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>First laugh</h3>
+              <p>One smile from you made my heart feel brave and light.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <h3>Every little moment</h3>
+              <p>Now every memory feels like a ribbon of love tied around my heart.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">A dreamy gallery</p>
+          <h2>Little pieces of us</h2>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item glass-card">
+            <img src="images/gallery1.jpeg" alt="Romantic view" />
+          </figure>
+          <figure class="gallery-item glass-card tall">
+            <img src="images/gallery2.jpeg" alt="Warm evening light" />
+          </figure>
+          <figure class="gallery-item glass-card">
+            <img src="images/gallery6.jpeg" alt="Elegant roses" />
+          </figure>
+          <figure class="gallery-item glass-card wide">
+            <img src="images/gallery5.jpeg" alt="Soft floral scene" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="surprise" class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">One more surprise</p>
+          <h2>Open your little surprise</h2>
+        </div>
+        <div class="surprise-card glass-card">
+          <button id="surpriseBtn" class="button-primary">Click Me ❤️</button>
+        </div>
+      </section>
+
+      <section id="final" class="section reveal final-section">
+        <div class="heart-glow"></div>
+        <div class="stars" aria-hidden="true"></div>
+        <div class="final-heart">❤</div>
+        <h2>I Love You Forever ❤️</h2>
+        <p>Every beat of my heart belongs to you, now and always.</p>
+        <div class="flowers" aria-hidden="true">🌸🌼🌷</div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <p>Made with love, softness, and a little bit of sparkle.</p>
+    </footer>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-card glass-card">
+        <h3>My sweetest secret</h3>
+        <p>You are the sweetest part of my world and the reason my heart feels full.</p>
+        <button id="closeModal" class="button-primary">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
